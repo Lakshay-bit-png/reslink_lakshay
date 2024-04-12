@@ -333,3 +333,15 @@
 
     }
 }
+
+@media only screen and (max-width:600px){
+    .upper-plan{
+        width:95vw;
+    }
+    .custom-plan{
+        width:95vw;
+    }
+    .saving{
+        display:none;
+    }
+}
