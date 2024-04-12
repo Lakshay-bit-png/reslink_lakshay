@@ -9,7 +9,7 @@ export const Routing = () => {
   return (
    <Router> {/* Wrap your routes with Router */}
     <Routes>
-        <Route path='/home' element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
        
     </Routes>
    </Router>
