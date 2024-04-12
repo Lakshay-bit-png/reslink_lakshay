@@ -25,6 +25,7 @@ color:white;
     align-items: center;
     justify-content: center;
     font-size:18px;
+    width:100%;
     
 
 }
@@ -36,13 +37,14 @@ color:white;
 .partners {
     display: flex;
     overflow: hidden;
+    width:100%;
    
 }
 
 
 
 @media (max-width: 900px) {
-    .partners img {
+    .partners {
         height: 100px;
         width: 200px;
         margin-right: 20px; /* Add margin between images */
