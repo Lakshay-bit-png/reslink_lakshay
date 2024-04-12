@@ -1,0 +1,127 @@
+.navigator{
+    width:100vw;
+    height:80px;
+   
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding:40px;
+    align-items: center;
+    position:relative;
+    z-index:5;
+
+
+}
+.logo{
+    display:flex;
+    align-items: center;
+    gap:6px;
+}
+.logo img{
+    height:40px;
+    width:50px;
+}
+.logo-title{
+    font-size:16px;
+    letter-spacing: 6px;;
+}
+.navigator-options{
+    display:flex;
+    gap:40px;
+}
+
+.jump{
+    display:flex;
+    gap:24px;
+    align-items: center;
+}
+.login{
+    font-size:16px;
+}
+.start{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:40px;
+    width:120px;
+    background-color: green;
+    border:none;
+    color:white;
+    border-radius:5px;
+}
+.hamburg-main{
+    display:none;
+}
+.cross{
+    display:none;
+}
+.dropdown{
+    display:none;
+}
+
+@media only screen and (max-width:1024px){
+    .navigator-options,.jump{
+        display:none;
+    }
+    .hamburg-main{
+        display:flex;
+    }
+    .hamburg{
+        display:flex;
+        flex-direction: column;
+        gap:6px;
+        align-items: center;
+        justify-content: center;
+        height:100%;
+        width:60px;
+        cursor:pointer;
+    }
+    .line-1,.line-2,.line-3{
+        height:1.5px;
+        position:relative;
+        width:24px;
+        background-color: rgb(255, 255, 255);
+        transition: 0.4s;
+        
+    }
+    .line-2{
+        width:16px;
+        position:relative;
+        left:4px;
+    }
+    .line-1-cust{
+        transform: rotate(45deg);
+        top:3.5px
+    }
+    .line-2-cust{
+        display: none;
+    }
+    .line-3-cust{
+        transform: rotate(-45deg);
+        bottom:3.5px;
+    }
+    .dropdown{
+        display:flex;
+        height:350px;
+        flex-direction: column;
+        justify-content: center;
+        gap:24px;
+        align-items: flex-end;
+        width:100%;
+        padding-right:24px;
+       
+        position:absolute;
+        color:white;
+        background-color: rgb(54, 54, 54);
+        transform: translateY(-150%);
+        z-index:1;
+        transition:0.4s;
+        
+ 
+    }
+    .dropdown-display{
+        transform: translateY(0%);
+    }
+
+
+}
