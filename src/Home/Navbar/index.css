@@ -60,6 +60,9 @@
 }
 
 @media only screen and (max-width:1024px){
+    .navigator{
+        padding:8px;
+    }
     .navigator-options,.jump{
         display:none;
     }
